@@ -1,7 +1,9 @@
 # midi2ay
 Adapts MIDI files for playing in the ZX Spectrum AY sound chip.
 ## Introduction
-This is a PY version with the aim of exiting cleanly back to basic.
+- This is a PY version with the aim of exiting cleanly back to basic.
+- --loop fuction that allows the track to loop
+- 'Press a key' to exit cleanly. 
 
 ## The algorithm
 The program tries to play a MIDI (which can have up to 2048 simultaneous notes playing) in an AY chip with only three channels. In order to achieve this, every 1/50th of a second it checks the notes playing at that moment, assigns to each one a weight and selects the three notes with higher weight, discarding the others. If there's a rythm track, it's ignored.
