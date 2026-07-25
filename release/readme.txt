@@ -6,6 +6,8 @@ Example:
 
 python mid2ayEx.py nokia.mid
 
+or python mid2ay7.py --loop nokia.mid
+
 Then in Pasmo:
 
 .\pasmo --tapbas nokia.asm nokia.tap
